@@ -1,54 +1,37 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pl">
 <head>
-    <title>Tytuł dokumentu</title>
+    <title>formularz</title>
     <meta charset="utf-8">
 </head>
-    
+
 <body>
-    <div><a href="http://sadeczanin.info/sites/default/files/journos/user14/2019/12/0p5a5356-01.jpeg" alt="zdjęcie liscia">LIŚĆ</a></div>
-    
-    <img src="http://sadeczanin.info/sites/default/files/journos/user14/2019/12/0p5a5356-01.jpeg" alt="zdjęcie liscia"/>
-    
-    <p>Lista punktowa:</p>
-    <ul>
-        <li>jeden</li>
-        <li>dwa</li>
-        <li>trzy</li>
-    </ul>
-    <p>Lista numerowa:</p>
-    <ol>
-        <li>jeden</li>
-        <li>dwa</li>
-        <li>trzy</li>
-    </ol>
-    
-    
-    <nav>
-        <ul>
-            <li><a href="#about">O Mnie</a></li>
-            <li><a href="#">Kontakt</a></li>
-        </ul>
-    </nav>
-    
-    <form action="mailto:xyz@gmail.com" method="post">
-        <label for="username">Imię:</label>
-        <input type="text" name="username" id="username">
-        <input type="text" name="username2" id="username2">
-    
-        <select name="select">
-            <option value="1">jeden</option>
-            <option value="2" selected>dwa</option>
-            <option value=3>trzy</option>
-        </select>
+
+    <form action="https://formspree.io/darekr1992@interia.p" method="post">
+        <label for="first_name">Imię:</label><br/>
+        <input id="first_name" name="first_name" type="text"><br/>
+        
+        <label for="last_name">Nazwisko:</label><br/>
+        <input id="last_name" name="last_name" type="text"><br/>
+        
+        <label for="email">Email:</label><br/>
+        <input id="email" name="email" type="email"><br/>
+        
+        <label for="password">Hasło:</label><br/>
+        <input id="password" name="pwd" type="password"><br/>
+        
+        <label for="phone">Numer telefonu:</label><br/>
+        <input id="phone" name="phone" type="tel"><br/>
+        
+        <label for="message">Wiadomość:</label><br/>
+        <textarea id="message"></textarea><br/>
+        
+        <label for="file">Wybierz plik:</label><br/>
+        <input id="file" name="file" type="file"><br/><br/>
+        
+        <input type="button" value="Wyślij">
+
     </form>
-    
-    <form action="https://formspree.io/darekr1992@interia.pl" method="post">
-  <label for="email">Your Email</label>
-  <input name="Email" id="email" type="email">
-  <button type="submit">Submit</button>
-</form>
     
 </body>
 
